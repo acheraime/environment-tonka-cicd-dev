@@ -1,0 +1,35 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDDDCCAfSgAwIBAgIRAN17wSbX9bDRxv+Zl9EbEqEwDQYJKoZIhvcNAQELBQAw
+    LzEtMCsGA1UEAxMkNDk0NDVjNmMtZDY0Ni00NDk5LWI5YWYtZDRlZGNkOGUxMjc5
+    MB4XDTE5MDgwOTEzNTMwNFoXDTI0MDgwNzE0NTMwNFowLzEtMCsGA1UEAxMkNDk0
+    NDVjNmMtZDY0Ni00NDk5LWI5YWYtZDRlZGNkOGUxMjc5MIIBIjANBgkqhkiG9w0B
+    AQEFAAOCAQ8AMIIBCgKCAQEA7bJPd76KA/tGg5SyVamElrcnOqphE7AYb5Ywyx7e
+    H/rVBUGeRgJa/WWJ9FD2eXBMfnUFD1qW3kDYQ1RW4oktf3QyPe4KwUBw6JLQ1rvX
+    29qjaqd9PyFP8Nkggx8hgdY8z6uXuS19zjYT8wJdMOy3ZDbdjpCoes9tIfztvD4d
+    WOYWqqcd7uaWpH4BpbNJyNVjvHLnPHqtG/6/ueoK1/VBgl72nAsP0OKrWgOOy2i+
+    7ly+P50QBTjv73W8bRVxEqiMkrbn/2iWu6+gY/vkxjOZsuI6mWKmUuf9sQH7RcTI
+    tmAX7bJtcefejf3nsTWlhAOYTiziR6W/gTyQqVwdULAntQIDAQABoyMwITAOBgNV
+    HQ8BAf8EBAMCAgQwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEA
+    P2aZIzHhWXhGGrIM65vcC+UYpeIacgb/BGpZBx07F4pRmwV99deAJSitFYvhxiQx
+    dP2d0E6FT09jFx8wsGkbQlwUq8HEIpVLStGQ2b44KpGXmQusnkDfOA0tFUmUpV6v
+    8uV2rFun5Ps/UbYZUEN/AHQbQq9eZ9l4a8jL7L/EST4qmQzAxfXrKbSg5mUQi5M+
+    15/tHQ/IHKY7GqcFE88qsvk7xDnW555zoN0edoqmbmm7U4213jl7/kp3qvFLqJwT
+    QN9O87UTvkYRozXT6XcaA8XWN7FR1AJ1FqRmy+YmdlJwHDdRUC9urD3g5lIzV2JD
+    ZD1rN4qcTwvTFJnCGrkolQ==
+    -----END CERTIFICATE-----
+  clusterName: tonka-cicd
+  jx-install-version: 2.0.577
+  kubeProvider: gke
+  projectID: powerchord-qa
+  region: ""
+  secretsLocation: vault
+  server: https://35.237.255.133
+  systemVaultName: jx-vault-tonka-cicd
+  zone: us-east1-b
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config
